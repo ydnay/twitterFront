@@ -1,6 +1,7 @@
 // Modules
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { SuiModule } from 'ng2-semantic-ui';
 import { RouterModule } from "@angular/router";
 import { HttpModule } from '@angular/http';
 
@@ -16,6 +17,7 @@ import { PublicPageComponent } from './auth/public-page/public-page.component';
     PublicPageComponent
   ],
   imports: [
+    SuiModule,
     BrowserModule,
     RouterModule.forRoot(routes),
     HttpModule
