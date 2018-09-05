@@ -8,13 +8,20 @@ import { HttpModule } from '@angular/http';
 // Routes
 import { routes } from './app.routing';
 
+// Modules
 import { AppComponent } from './app.component';
 import { PublicPageComponent } from './auth/public-page/public-page.component';
+import { LoginComponent } from './auth/login/login.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { LogoutComponent } from './auth/logout/logout.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PublicPageComponent
+    PublicPageComponent,
+    LoginComponent,
+    SignupComponent,
+    LogoutComponent
   ],
   imports: [
     SuiModule,
