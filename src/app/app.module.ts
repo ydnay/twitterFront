@@ -8,7 +8,10 @@ import { HttpModule } from '@angular/http';
 // Routes
 import { routes } from './app.routing';
 
-// Modules
+// Services
+import { AuthService } from './services/auth.service';
+
+// Components
 import { AppComponent } from './app.component';
 import { PublicPageComponent } from './auth/public-page/public-page.component';
 import { LoginComponent } from './auth/login/login.component';
@@ -29,7 +32,7 @@ import { LogoutComponent } from './auth/logout/logout.component';
     RouterModule.forRoot(routes),
     HttpModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
