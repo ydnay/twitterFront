@@ -1,10 +1,16 @@
 import { Routes } from '@angular/router';
 
+// Components
+import { AppComponent } from './app.component';
 import { PublicPageComponent } from './auth/public-page/public-page.component';
-// import { PhoneListComponent } from './phone-list/phone-list.component';
+import { LoginComponent } from './auth/login/login.component';
+import { SignupComponent } from './auth/signup/signup.component';
+import { LogoutComponent } from './auth/logout/logout.component';
 
 export const routes: Routes = [
     { path: '', component: PublicPageComponent },
-    // { path: 'phone/:id', component: PhoneDetailsComponent },
+    { path: 'login', component: LoginComponent },
+    { path: 'signup', component: SignupComponent },
+    { path: 'logout', component: LogoutComponent },
     { path: '**', redirectTo: '' }
 ];
