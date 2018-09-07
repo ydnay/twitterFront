@@ -19,7 +19,7 @@ export class LoginComponent implements OnInit {
   login() {
     this.session.login(this.user)
       .subscribe(
-        user => { this.router.navigate(['']) },
+        next => { this.router.navigate(['']) },
         err => { this.error = err; }
       )
   }

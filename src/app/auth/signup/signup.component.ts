@@ -16,7 +16,7 @@ export class SignupComponent implements OnInit {
   ngOnInit() {
     this.session.isLoggedIn()
       .subscribe( 
-        user => { return; },
+        next => { this.router.navigate(['']) },
         err => { this.error = err; }
       )
   }
@@ -24,7 +24,7 @@ export class SignupComponent implements OnInit {
   signup() {
     this.session.signup(this.user)
       .subscribe(
-        user => { this.router.navigate(['']) },
+        next => { this.router.navigate(['']) },
         err => { this.error = err; }
       )
   }
