@@ -2,11 +2,6 @@ html, body {
   min-height: 100%;
 }
 
-/* .static-logged-out {
-  margin: 0%;
-  height: auto;
-} */
-
 .communication-block, .blue-btn{
   background-color: rgb(39, 118, 197);
   color: white;
