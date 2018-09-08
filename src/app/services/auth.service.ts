@@ -4,9 +4,8 @@ import { map, catchError} from 'rxjs/operators';
 import { Observable, throwError } from 'rxjs';
 import { environment } from '../../environments/environment';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable({ providedIn: 'root' })
+
 export class AuthService {
   mainURL: String = environment.BASE_URL;
   constructor(private http: Http) {}
@@ -17,7 +16,7 @@ export class AuthService {
 
   signup(user) {
     return this.http.post(`${this.mainURL}/signup`, user)
-    .pipe(map(res => res.json()),catchError(this.handleError));
+    .pipe(map(res => res.json()), catchError(this.handleError));
   }
 
   login(user) {
@@ -33,11 +32,10 @@ export class AuthService {
   isLoggedIn() {
     return this.http.get(`${this.mainURL}/loggedin`, { withCredentials: true })
     .pipe(map(res => res.json()), catchError(this.handleError));
-      
   }
 
   getPrivateData() {
-    return this.http.get(`${this.mainURL}/private`, { withCredentials:true })
-    .pipe(map(res => res.json()),catchError(this.handleError));
+    return this.http.get(`${this.mainURL}/private`, { withCredentials: true })
+    .pipe(map(res => res.json()), catchError(this.handleError));
   }
 }
