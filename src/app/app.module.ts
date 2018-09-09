@@ -19,6 +19,10 @@ import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LogoutComponent } from './auth/logout/logout.component';
 import { HomeComponent } from './home/home.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { MiniProfileComponent } from './mini-profile/mini-profile.component';
+import { AllTweetsComponent } from './all-tweets/all-tweets.component';
+import { WhoToFollowComponent } from './who-to-follow/who-to-follow.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,11 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     SignupComponent,
     LogoutComponent,
-    HomeComponent
+    HomeComponent,
+    NavBarComponent,
+    MiniProfileComponent,
+    AllTweetsComponent,
+    WhoToFollowComponent
   ],
   imports: [
     SuiModule,
