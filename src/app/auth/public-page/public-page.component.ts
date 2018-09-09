@@ -19,7 +19,7 @@ export class PublicPageComponent implements OnInit {
   login() {
     this.session.login(this.user)
       .subscribe(
-        next => { this.router.navigate(['/auth/private']) },
+        next => { this.router.navigate(['home']) },
         err => { this.error = err; }
       )
   }
