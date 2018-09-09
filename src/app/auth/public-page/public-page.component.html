@@ -23,13 +23,13 @@
       <div class="two fields">
         <div class="field">
           <label></label>
-          <input placeholder="Phone, email, username" type="text">
+          <input [(ngModel)]="user.username" name="username" placeholder="Username" type="text">
         </div>
         <div class="field">
           <label></label>
-          <input placeholder="Password" type="text">
+          <input [(ngModel)]="user.password" name="password" placeholder="Password" type="password">
         </div>
-        <button class="blue basic ui circular button"><b>Login</b></button>
+        <button (click)="login()" class="blue basic ui circular button"><b>Login</b></button>
       </div>
     </form>
     <i class="twitter huge icon"></i>

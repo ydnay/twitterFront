@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { SuiModule } from 'ng2-semantic-ui';
 import { RouterModule } from "@angular/router";
 import { HttpModule } from '@angular/http';
+import { FormsModule } from "@angular/forms";
 
 // Routes
 import { routes } from './app.routing';
@@ -17,6 +18,7 @@ import { PublicPageComponent } from './auth/public-page/public-page.component';
 import { LoginComponent } from './auth/login/login.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LogoutComponent } from './auth/logout/logout.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -24,13 +26,15 @@ import { LogoutComponent } from './auth/logout/logout.component';
     PublicPageComponent,
     LoginComponent,
     SignupComponent,
-    LogoutComponent
+    LogoutComponent,
+    HomeComponent
   ],
   imports: [
     SuiModule,
     BrowserModule,
     RouterModule.forRoot(routes),
-    HttpModule
+    HttpModule,
+    FormsModule
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
