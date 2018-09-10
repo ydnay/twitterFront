@@ -15,27 +15,27 @@ export class AuthService {
   }
 
   signup(user) {
-    return this.http.post(`${this.mainURL}/signup`, user)
+    return this.http.post(`${this.mainURL}/auth/signup`, user)
     .pipe(map(res => res.json()), catchError(this.handleError));
   }
 
   login(user) {
-    return this.http.post(`${this.mainURL}/login`, user, { withCredentials: true })
+    return this.http.post(`${this.mainURL}/auth/login`, user, { withCredentials: true })
     .pipe(map(res => res.json()), catchError(this.handleError));
   }
 
   logout() {
-    return this.http.post(`${this.mainURL}/logout`, { withCredentials: true })
+    return this.http.post(`${this.mainURL}/auth/logout`, { withCredentials: true })
     .pipe(map(res => res.json()), catchError(this.handleError));
   }
 
   isLoggedIn() {
-    return this.http.get(`${this.mainURL}/loggedin`, { withCredentials: true })
+    return this.http.get(`${this.mainURL}/auth/loggedin`, { withCredentials: true })
     .pipe(map(res => res.json()), catchError(this.handleError));
   }
 
   getPrivateData() {
-    return this.http.get(`${this.mainURL}/private`, { withCredentials: true })
+    return this.http.get(`${this.mainURL}/auth/private`, { withCredentials: true })
     .pipe(map(res => res.json()), catchError(this.handleError));
   }
 }
