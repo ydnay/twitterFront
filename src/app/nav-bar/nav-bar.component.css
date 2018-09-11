@@ -1,0 +1,20 @@
+#nav-container {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  overflow: hidden;
+}
+
+#nav-container a {
+  float: left;
+  color: #44444467;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#nav-container a:hover {
+  background-color: white;
+  color: rgb(0, 148, 247);
+}
