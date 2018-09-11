@@ -1,0 +1,22 @@
+#signup-box {
+  width: 40%;
+  height: auto;
+  background-color: white;
+  position: relative;
+  top: 150px;
+  left: 450px;
+  border: line;
+  border-style: solid;
+  border-color: lightgrey;
+  padding: 20px;
+}
+
+body {
+  background-color: lightgray;
+}
+
+#birdy {
+  color: #1DA1F2;
+  position: relative;
+  left: 260px;
+}
