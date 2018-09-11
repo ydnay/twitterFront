@@ -69,34 +69,41 @@ body {
 
 #home {
   position: relative;
-  left: 55px;
+  left: 315px;
+  bottom: 35px;
 }
 
 #about {
   position: relative;
-  left: 50px;
-  bottom: 24px;
+  left: 300px;
+  bottom: 35px;
 }
 
 #blueButton {
   position: relative;
-  top: 50px;
-  right: 250px;
-  color: #1DA1F2;
+  top: 35px;
+
+  color: white;
+  background-color: #1DA1F2;
+  width: 10%;
 }
 
-#blueButton a {
-  color: #1DA1F2;
-}
 
 #remember {
   position: relative;
-  top: 50px;
-  right: 230px;
+  top: 20px;
+  left: 120px;
 }
 
 #rememberme {
   position: relative;
-  top: 20px;
+  top: 0px;
   left: 140px;
+}
+
+#bird {
+  color: #1DA1F2;
+  position: relative;
+  left: 290px;
+  top: 25px;
 }
