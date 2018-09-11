@@ -1,4 +1,5 @@
 <div id="nav-container">
+  <i id="bird" class="twitter large icon"></i>
   <h3 id="home"><a>Home</a> </h3>
   <h3 id="about"><a>About</a> </h3>
 </div>
@@ -14,7 +15,7 @@
       <div class="field">
         <label></label>
         <input id="passwordField" [(ngModel)]="user.password" name="password" placeholder="Password" type="password">
-        <button id="loginbtn" (click)="login()" class="blue basic ui circular button" id="blueButton"><b>Login</b></button>
+        <button (click)="login()" class="blue ui circular fluid button" id="blueButton"><b>Login</b></button>
         <input type="checkbox" value="1" name="remember_me" id="remember">
         <div id="rememberme"> Remember Me <a> Forgot Password?</a> </div>
       </div>
