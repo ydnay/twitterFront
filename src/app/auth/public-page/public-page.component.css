@@ -50,11 +50,11 @@ body {
   fill-opacity: 50%;
 }
 
-#loginbtn {
+/* #loginbtn {
   position: relative;
-  left: 260px;
+  right: 100px;
   top: 50px;
-}
+} */
 
 #large-signup {
   width: 75%;
