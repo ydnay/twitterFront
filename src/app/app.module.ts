@@ -11,6 +11,7 @@ import { routes } from './app.routing';
 
 // Services
 import { AuthService } from './services/auth.service';
+import { TweetService } from './services/tweet.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -46,7 +47,7 @@ import { PostTweetComponent } from './tweet/post-tweet/post-tweet.component';
     HttpModule,
     FormsModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, TweetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
