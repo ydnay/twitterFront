@@ -1,26 +1,26 @@
 <div class="ui container equal width grid" id="communication">
-  <div class="static-logged-out communication-block ui container column">
+  <div class="static-logged-out communication-block ui container column" id="container-coloumn">
     <div class="ui huge list">
 
-      <div class="ui item">
+      <div class="ui-item">
         <i class="search icon"></i>
         <div class="content">Follow your interest.</div>
       </div><br>
-      <div class="ui item">
+      <div class="ui-item">
         <i class="users icon"></i>
         <div class="content">Hear what people are talking about.</div>
       </div><br>
-      <div class="ui item">
+      <div class="ui-item">
         <i class="comment outline icon"></i>
         <div class="content">Join the conversation.</div>
       </div>
 
     </div>
   </div>
-  
+
   <div class="static-logged-out utility-block column">
     <form class="ui large form">
-      <div class="two fields">
+      <!-- <div class="two fields">
         <div class="field">
           <label></label>
           <input [(ngModel)]="user.username" name="username" placeholder="Username" type="text">
@@ -28,20 +28,20 @@
         <div class="field">
           <label></label>
           <input [(ngModel)]="user.password" name="password" placeholder="Password" type="password">
-        </div>
-        <button (click)="login()" class="blue basic ui circular button"><b>Login</b></button>
-      </div>
+        </div> -->
+      <button id="loginbtn" (click)="login()" class="blue basic ui circular button"><b>Login</b></button>
+      <!-- </div> -->
     </form>
     <i class="twitter huge icon"></i>
-    <h1 class="">See what's happening in the world right now</h1><br>
+    <h1 class="">See what's happening in <br> the world right now</h1><br>
     <h3 class="">Join Twitter today.</h3>
-    <button class="blue ui circular fluid button">Sign Up</button><br>
-    <button class="blue basic ui circular fluid button"><b>Log in</b></button>
+    <button class="blue ui circular fluid button" id="large-signup">Sign Up</button><br>
+    <button class="blue basic ui circular fluid button" id="large-login"><b>Log in</b></button>
   </div>
 </div>
 
 <div class="ui small fluid borderless menu" id="footer">
-  <!-- <a class="item">About</a>
+  <a class="item">About</a>
   <a class="item">Help Center</a>
   <a class="item">Blog</a>
   <a class="item">Status</a>
@@ -57,7 +57,6 @@
   <a class="item">Business</a>
   <a class="item">Developers</a>
   <a class="item">Directory</a>
-  <a class="item">Settings</a> -->
+  <a class="item">Settings</a>
   <a class="item">@2018 Twitter</a>
 </div>
-

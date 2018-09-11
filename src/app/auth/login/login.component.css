@@ -1,0 +1,102 @@
+#loginBox {
+  /* border: solid;
+    border-width: 0.5px;
+    border-color: black; */
+  width: 750px;
+  height: 300px;
+  position: relative;
+  top: 50px;
+  left: 370px;
+  background-color: white;
+}
+
+.field {
+  position: relative;
+  top: 50px;
+  left: 100px;
+}
+
+#loginField {
+  width: 250px;
+  height: 30px;
+  margin: 7px;
+}
+
+#passwordField {
+  width: 250px;
+  height: 30px;
+  margin: 7px;
+}
+
+#extension {
+  background-color: #F5F8FA;
+  width: 750px;
+  height: 70px;
+  position: relative;
+  top: 110px;
+}
+
+body {
+  background-color: #E6ECF0;
+}
+
+#newToTwitterTxt {
+  position: relative;
+  top: 10px;
+  left: 110px;
+}
+
+#nav-container {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+  overflow: hidden;
+}
+
+#nav-container a {
+  float: left;
+  color: #44444467;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#nav-container a:hover {
+  background-color: white;
+  color: rgb(0, 148, 247);
+}
+
+#home {
+  position: relative;
+  left: 55px;
+}
+
+#about {
+  position: relative;
+  left: 50px;
+  bottom: 24px;
+}
+
+#blueButton {
+  position: relative;
+  top: 50px;
+  right: 250px;
+  color: #1DA1F2;
+}
+
+#blueButton a {
+  color: #1DA1F2;
+}
+
+#remember {
+  position: relative;
+  top: 50px;
+  right: 230px;
+}
+
+#rememberme {
+  position: relative;
+  top: 20px;
+  left: 140px;
+}
