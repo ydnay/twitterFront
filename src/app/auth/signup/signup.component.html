@@ -1,3 +1,27 @@
-<p>
-  signup works!
-</p>
+<body>
+
+  <div id="signup-box">
+    <i id="birdy" class="twitter large icon"></i>
+    <h1> Create your account</h1>
+    <form class="ui form">
+
+      <div class="field">
+        <label>First Name</label>
+        <input type="text" name="first-name" placeholder="First Name">
+      </div>
+      <div class="field">
+        <label>Last Name</label>
+        <input type="text" name="last-name" placeholder="Last Name">
+      </div>
+      <div class="field">
+        <div class="ui checkbox">
+          <input type="checkbox" tabindex="0" class="hidden">
+          <label>I agree to the Terms and Conditions</label>
+        </div>
+      </div>
+      <button id="loginbtn" (click)="login()" class="blue ui circular button"><b>Next</b></button>
+    </form>
+
+  </div>
+
+</body>
