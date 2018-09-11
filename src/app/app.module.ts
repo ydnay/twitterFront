@@ -11,6 +11,7 @@ import { routes } from './app.routing';
 
 // Services
 import { AuthService } from './services/auth.service';
+import { TweetService } from './services/tweet.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -23,6 +24,7 @@ import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { MiniProfileComponent } from './mini-profile/mini-profile.component';
 import { AllTweetsComponent } from './all-tweets/all-tweets.component';
 import { WhoToFollowComponent } from './who-to-follow/who-to-follow.component';
+import { PostTweetComponent } from './tweet/post-tweet/post-tweet.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { WhoToFollowComponent } from './who-to-follow/who-to-follow.component';
     NavBarComponent,
     MiniProfileComponent,
     AllTweetsComponent,
-    WhoToFollowComponent
+    WhoToFollowComponent,
+    PostTweetComponent
   ],
   imports: [
     SuiModule,
@@ -44,7 +47,7 @@ import { WhoToFollowComponent } from './who-to-follow/who-to-follow.component';
     HttpModule,
     FormsModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, TweetService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
