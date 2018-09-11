@@ -1,9 +1,11 @@
-html, body {
+html,
+body {
   min-height: 100%;
 }
 
-.communication-block, .blue-btn{
-  background-color: rgb(39, 118, 197);
+.communication-block,
+.blue-btn {
+  background-color: #1DA1F2;
   color: white;
   height: fill;
 }
@@ -13,7 +15,7 @@ html, body {
 }
 
 .twitter {
-  color: rgb(39, 118, 197);
+  color: #1DA1F2;
 }
 
 #footer {
@@ -26,3 +28,40 @@ html, body {
   padding: 0;
 }
 
+.content {
+  position: relative;
+  top: -20px;
+  left: 40px;
+}
+
+.ui-item {
+  position: relative;
+  top: 250px;
+  left: 100px;
+}
+
+#container-coloumn {
+  position: relative;
+  right: 145px;
+}
+
+.item {
+  color: lightgray;
+  fill-opacity: 50%;
+}
+
+#loginbtn {
+  position: relative;
+  left: 260px;
+  top: 50px;
+}
+
+#large-signup {
+  width: 75%;
+  background-color: #1DA1F2;
+}
+
+#large-login {
+  width: 75%;
+  color: #1DA1F2;
+}

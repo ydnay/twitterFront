@@ -1,3 +1,27 @@
-<p>
-  login works!
-</p>
+<div id="nav-container">
+  <h3 id="home"><a>Home</a> </h3>
+  <h3 id="about"><a>About</a> </h3>
+</div>
+
+<body>
+  <div id="loginBox">
+    <div class="two fields">
+      <div class="field">
+        <h1> Log in to Twitter</h1>
+        <label></label>
+        <input id="loginField" [(ngModel)]="user.username" name="username" placeholder="Username" type="text">
+      </div>
+      <div class="field">
+        <label></label>
+        <input id="passwordField" [(ngModel)]="user.password" name="password" placeholder="Password" type="password">
+        <button id="loginbtn" (click)="login()" class="blue basic ui circular button" id="blueButton"><b>Login</b></button>
+        <input type="checkbox" value="1" name="remember_me" id="remember">
+        <div id="rememberme"> Remember Me <a> Forgot Password?</a> </div>
+      </div>
+      <div id="extension">
+        <p id="newToTwitterTxt">New to Twitter? <a>Sign up now »</a> <br>
+          Already using Twitter via text message? <a> Activate your account »</a> <br></p>
+      </div>
+    </div>
+  </div>
+</body>
