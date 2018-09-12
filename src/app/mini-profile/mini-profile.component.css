@@ -5,3 +5,17 @@
   width: 70px;
   height: 70px;
 }
+
+#blu {
+  color: #1DA1F2;
+}
+
+.image {
+  position: relative;
+  left: 0px;
+}
+
+#whitecard {
+  position: relative;
+  left: 120px;
+}
