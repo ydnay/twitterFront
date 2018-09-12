@@ -11,4 +11,7 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit() {}
 
+  isFormDisabled: boolean = true;
+
+  toggleForm() { this.isFormDisabled = !this.isFormDisabled; }
 }
