@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { TweetService } from '../services/tweet.service';
+import { AuthService } from './../services/auth.service';
 
 @Component({
   selector: 'app-all-tweets',
@@ -7,9 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllTweetsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private tServ: TweetService, private router: Router, private authService: AuthService) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
