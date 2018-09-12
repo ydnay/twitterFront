@@ -1,4 +1,4 @@
-body {
+/* body {
   background-color: #E6ECF0;
 }
 
@@ -29,13 +29,15 @@ body {
   position: relative;
   top: 100px;
   padding: 45px;
-}
+} */
 
 #userIcon {
   color: lightgrey;
   position: relative;
   top: 5px;
   right: 580px;
+}
 
-
+.grid {
+  margin: 0 1%
 }
