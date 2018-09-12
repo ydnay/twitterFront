@@ -1,3 +1,7 @@
-<p>
-  post-tweet works!
-</p>
+<form class="ui form">
+  <div class="field">
+    <label>Message</label>
+    <input type="text" name="tweet-message" placeholder="What's happening">
+  </div>
+  <button (click)="addTweet()" class="ui button" type="submit">Tweet</button>
+</form>
