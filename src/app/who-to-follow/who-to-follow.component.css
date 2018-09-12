@@ -2,11 +2,9 @@
   position: relative;
   width: 280px;
   height: 250px;
-  border: 1px;
-  border-style: solid;
-  border-color: lightgrey;
   background-color: white;
   padding: 15px;
+  right: 20px;
 }
 
 #disclaimer {
@@ -16,9 +14,7 @@
   position: relative;
   top: 15px;
   background-color: white;
-  border: 1px;
-  border-style: solid;
-  border-color: lightgrey;
+  right: 20px;
 }
 
 #refresh {

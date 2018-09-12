@@ -18,3 +18,32 @@
   background-color: white;
   color: rgb(0, 148, 247);
 }
+
+
+#search {
+  position: relative;
+  right: 150px;
+  top: 17px;
+}
+
+#userIcon {
+  position: relative;
+  top: 10px;
+  right: 40px;
+}
+
+#theTwitterBTN {
+  width: 43%;
+  position: relative;
+  right: 14px;
+}
+
+.item {
+  position: relative;
+  left: 100px;
+}
+
+input {
+  position: relative;
+  right: 100px;
+}
