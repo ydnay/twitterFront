@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+// import { Router } from '@angular/router';
 import { TweetService } from '../../services/tweet.service';
 import { AuthService } from '../../services/auth.service';
 
@@ -13,7 +13,7 @@ export class PostTweetComponent implements OnInit {
   tweet = { user: '', message: '' };
   error: String;
 
-  constructor(private tServ: TweetService, private router: Router, private authService: AuthService) {}
+  constructor(private tServ: TweetService, private authService: AuthService, /* private router: Router */) {}
 
   ngOnInit() {
     this.authService.isLoggedIn().subscribe(
