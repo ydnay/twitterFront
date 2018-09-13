@@ -25,6 +25,7 @@ import { MiniProfileComponent } from './mini-profile/mini-profile.component';
 import { AllTweetsComponent } from './all-tweets/all-tweets.component';
 import { WhoToFollowComponent } from './who-to-follow/who-to-follow.component';
 import { PostTweetComponent } from './tweet/post-tweet/post-tweet.component';
+import { DisplayTweetComponent } from './tweet/display-tweet/display-tweet.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { PostTweetComponent } from './tweet/post-tweet/post-tweet.component';
     MiniProfileComponent,
     AllTweetsComponent,
     WhoToFollowComponent,
-    PostTweetComponent
+    PostTweetComponent,
+    DisplayTweetComponent
   ],
   imports: [
     SuiModule,
