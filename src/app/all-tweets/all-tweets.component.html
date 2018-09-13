@@ -17,3 +17,9 @@
 
 <!-- </div> -->
 <!-- </div> -->
+
+<ul>
+  <li *ngFor="let tweet of tweets, trackBy:tweetTrackerFunction">
+    {{ i }} - {{ tweet.message }}
+  </li>
+</ul>

@@ -14,4 +14,8 @@ export class AllTweetsComponent implements OnInit {
 
   ngOnInit() {}
 
+  tweetTrackerFunction(index: number, tweet: any) {
+    return tweet.id;
+  }
+
 }
