@@ -13,3 +13,9 @@ export class MiniProfileComponent implements OnInit {
   }
 
 }
+
+// <h4> {{ user.tweets }} </h4>
+// <h4> {{ user.following }} </h4>
+// <h4> {{ user.followers }} </h4>
+// </div>
+
