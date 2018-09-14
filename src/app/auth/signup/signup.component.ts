@@ -15,18 +15,18 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {
     this.session.isLoggedIn()
-      .subscribe( 
-        next => { this.router.navigate(['']) },
+      .subscribe(
+        next => { this.router.navigate(['']); },
         err => { this.error = err; }
-      )
+      );
   }
 
   signup() {
     this.session.signup(this.user)
       .subscribe(
-        next => { this.router.navigate(['']) },
+        next => { this.router.navigate(['']); },
         err => { this.error = err; }
-      )
+      );
   }
 
 }
