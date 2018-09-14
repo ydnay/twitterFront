@@ -17,18 +17,18 @@ export class PostTweetComponent implements OnInit {
 
   ngOnInit() {
     this.authService.isLoggedIn().subscribe(
-      next => { this.tweet.user = next.username},
+      next => { this.tweet.user = next.username; },
       err => { this.error = err; }
     );
   }
 
-  addTweet(){
+  addTweet() {
     console.log(this.tweet);
     this.tServ.postTweet(this.tweet)
       .subscribe(
         next => {},
         err => { this.error = err; }
       );
-  };
+  }
 
 }

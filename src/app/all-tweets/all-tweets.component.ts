@@ -9,10 +9,16 @@ import { AuthService } from './../services/auth.service';
   styleUrls: ['./all-tweets.component.css']
 })
 export class AllTweetsComponent implements OnInit {
+  tweets: any = [];
 
   constructor(private tServ: TweetService, private router: Router, private authService: AuthService) {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.tServ.getTweet()
+    .subscribe((tweets) => {
+      this.tweets = tweets;
+    });
+  }
 
   tweetTrackerFunction(index: number, tweet: any) {
     return tweet.id;

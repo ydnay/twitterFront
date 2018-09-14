@@ -14,10 +14,10 @@ export class LogoutComponent implements OnInit {
 
   ngOnInit() {
     this.session.logout()
-      .subscribe( 
-        next => { this.router.navigate(['']) },
+      .subscribe(
+        next => { this.router.navigate(['']); },
         err => { this.error = err; }
-      )
+      );
   }
 
 }
