@@ -3,6 +3,7 @@
   height: 50px;
   background-color: white;
   overflow: hidden;
+  padding: 0;
 }
 
 #nav-container a {

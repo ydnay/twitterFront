@@ -1,6 +1,12 @@
-<form class="ui tiny form">
-  <div class="field">
-    <input type="text" name="tweet-message" [(ngModel)]="tweet.message" placeholder="What's happening?">
-  </div>
-  <button (click)="addTweet()" class="ui button" type="submit">Tweet</button>
-</form>
+<div id="AnotherBox" class="ui raised segment">
+  <form class="ui tiny form">
+    <div class="field">
+      <i id="userIcon" class="user huge grey circle icon"></i> <input id="TweetInput" type="text" name="tweet-message"
+        [(ngModel)]="tweet.message" placeholder="What's happening?">
+    </div>
+    <button id="tweetBTN" class="blue ui circular fluid button" id="Tweet">Tweet</button>
+  </form>
+</div>
+<div id="semanticTweetBox" class="ui raised segment">
+  {{user.tweet-message}}
+</div>

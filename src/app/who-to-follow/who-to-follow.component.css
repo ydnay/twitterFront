@@ -1,40 +1,25 @@
-/* #whoToFollow {
-  position: relative;
-  width: 280px;
-  height: 250px;
-  background-color: white;
-  padding: 15px;
-  right: 20px;
-}
+ #whoToFollow {
 
-#disclaimer {
-  padding: 15px;
-  width: 280px;
-  height: 160px;
-  position: relative;
-  top: 15px;
-  background-color: white;
-  right: 20px;
-}
+   background-color: white;
+   padding: 5%;
 
-#refresh {
-  position: relative;
-  left: 135px;
-  bottom: 35px;
-}
+ }
 
-#viewAll {
-  position: relative;
-  left: 145px;
-  bottom: 35px;
-}
+ #disclaimer {
+   padding: 5%;
 
-#followLine {
-  position: relative;
-  top: 125px;
-}
 
-#findPeople {
+   background-color: white;
+
+ }
+
+
+ /* #followLine {
+   position: relative;
+   top: 125px;
+ } */
+
+ /* #findPeople {
   position: relative;
   top: 130px;
   left: 5px;

@@ -1,43 +1,47 @@
-/* body {
-  background-color: #E6ECF0;
-}
+  #background {
+    background-color: rgb(219, 222, 224);
+    width: 100%;
+    height: 100%;
+    padding-top: 0;
+  }
 
-#tweetHolder {
-  position: relative;
-  left: 430px;
-  bottom: 410px;
-  background-color: white;
-  width: 630px;
-  height: 370px;
+  /*
+ #tweetHolder {
+   position: relative;
+   left: 430px;
+   bottom: 410px;
+   background-color: white;
+   width: 630px;
+   height: 370px;
 
 
-}
+ }
 
-#tweetHere {
-  background-color: #E8F5FD;
-  height: 75px;
-}
+ #tweetHere {
+   background-color: #E8F5FD;
+   height: 75px;
+ }
 
-#Tweet {
-  width: 580px;
-  position: relative;
-  top: 20px;
-  left: 60px;
-}
+ #Tweet {
+   width: 580px;
+   position: relative;
+   top: 20px;
+   left: 60px;
+ }
 
-#noTweets {
-  position: relative;
-  top: 100px;
-  padding: 45px;
-} */
+ #noTweets {
+   position: relative;
+   top: 100px;
+   padding: 45px;
+ }*/
 
-#userIcon {
-  color: lightgrey;
-  position: relative;
-  top: 5px;
-  right: 580px;
-}
+  #userIcon {
+    color: lightgrey;
+    position: relative;
+    top: 5px;
+    right: 580px;
+  }
 
-.grid {
-  margin: 0 1%
-}
+  .grid {
+    margin: 0 1%
+  }
