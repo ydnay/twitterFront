@@ -19,7 +19,7 @@
 <!-- </div> -->
 
 <ul>
-  <li *ngFor="let tweet of tweets, trackBy:tweetTrackerFunction">
-    {{ i }} - {{ tweet.message }}
+  <li *ngFor="let tweet of tweets, let i = index">
+    {{i}} - {{ tweet.message }} - {{ tweet.date }}
   </li>
 </ul>

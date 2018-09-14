@@ -18,4 +18,9 @@ export class TweetService {
     return this.http.post(`${this.mainURL}/tweet`, tweet, { withCredentials: true })
     .pipe(map(res => res.json()), catchError(this.handleError));
   }
+
+  getTweet() {
+    return this.http.get(`${this.mainURL}/tweet`)
+    .pipe(map(res => res.json()), catchError(this.handleError));
+  }
 }
