@@ -10,6 +10,8 @@ import { AuthService } from './../services/auth.service';
 })
 export class AllTweetsComponent implements OnInit {
   tweets: any = [];
+  tweet: any = {};
+  error: String;
 
   constructor(private tServ: TweetService, private router: Router, private authService: AuthService) {}
 
@@ -23,5 +25,30 @@ export class AllTweetsComponent implements OnInit {
   tweetTrackerFunction(index: number, tweet: any) {
     return tweet.id;
   }
+
+  deleteTweet() {
+    this.tServ.deleteTweet(this.tweet.id)
+      .subscribe(
+        next => {},
+        err => { this.error = err; }
+      );
+  }
+
+  // deleteTravel(travelId) {
+  //   this.travel.deleteTravel(travelId).subscribe(() => {
+  //     this.travel.getTravel().subscribe(travels => {
+  //       this.travels = travels;
+  //     });
+  //   });
+  // }
+
+  // addTweet() {
+  //   console.log(this.tweet);
+  //   this.tServ.postTweet(this.tweet)
+  //     .subscribe(
+  //       next => {},
+  //       err => { this.error = err; }
+  //     );
+  // }
 
 }

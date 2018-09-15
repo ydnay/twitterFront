@@ -5,29 +5,29 @@
   <div class="content">
     <!-- <i id="profileCircle" class="circle outline huge icon"></i> -->
 
-    <a class="header">Full Name</a> <!--{{user.name}}-->
-    <a class="header">@username</a> <!--{{user.username}}-->
+    <a class="header">{{ user.name }}</a> <!--{{user.name}}-->
+    <a class="header">@{{ user.username }}</a> <!--{{user.username}}-->
     <div class="meta">
-      <span class="date">Since</span> <!--{{this.Date}} commented out error compiling-->
+      <span class="date">September 2018</span> <!--{{this.Date}} commented out error compiling-->
     </div><br>
     <div class="ui grid">
       <div class="three column row">
         <div class="column">
           <a>
             <h4 class="ui header">Tweets</h4>
-            <i class="ui header">No. of T</i> <!-- {{tweets}} -->
+            <i class="ui header">4</i> <!-- {{tweets}} -->
           </a>
         </div>
         <div class="column">
           <a>
             <h4 class="ui header">Following</h4>
-            <i class="ui header">No. of F</i>
+            <i class="ui header">{{user.following.length}}</i>
           </a>
         </div>
         <div class="column">
           <a>
             <h4 class="ui header">Followers</h4>
-            <i class="ui header">No. of F</i>
+            <i class="ui header">{{user.followers.length}}</i>
           </a>
         </div>
       </div>
