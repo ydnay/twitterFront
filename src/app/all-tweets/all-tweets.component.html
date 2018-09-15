@@ -28,8 +28,9 @@
         <h5 class="ui right floated header">{{ tweet.user }}</h5>
         <div class="description">
           <p>{{ tweet.message }}</p>
+          <p></p>
         </div>
-        <button (click)="deleteTweet()" class="mini ui button">Delete</button>
+        <button [id]="tweet._id" (click)="deleteTweet($event)" class="mini ui button">Delete</button>
         <button (click)="editTweet()" class="mini ui button">Edit</button>
       </div>
     </div>

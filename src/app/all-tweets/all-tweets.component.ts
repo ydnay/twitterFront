@@ -26,8 +26,9 @@ export class AllTweetsComponent implements OnInit {
     return tweet.id;
   }
 
-  deleteTweet() {
-    this.tServ.deleteTweet(this.tweet.id)
+  deleteTweet(event) {
+    console.log(event.target.id);
+    this.tServ.deleteTweet(event.target.id)
       .subscribe(
         next => {},
         err => { this.error = err; }
